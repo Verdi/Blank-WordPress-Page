@@ -1,11 +1,11 @@
 <?php
 /*
  * Template Name: Blank Page
- * Description: This WordPress page template removes all of the WordPress html from a page so that you can write whatever html you want between the body tags and style it with it's own css file.  
+ * Description: This WordPress page template removes all of the special WordPress html from a page so that you can write whatever html you want between the body tags and style it with it's own css file.  
  */
 ?>
 <?php remove_filter ('the_content', 'wpautop'); 
-	// This removes html that Wordpress sticks into your post
+	// This removes extra html (like <p> tags) that Wordpress sticks into your post
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
